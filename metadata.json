@@ -1,0 +1,6 @@
+{
+  "name": "PPID Pengadilan Agama Semarang",
+  "description": "Portal Resmi Pejabat Pengelola Informasi dan Dokumentasi (PPID) Pengadilan Agama Semarang Kelas 1-A. Layanan permohonan informasi publik online, daftar informasi berkala, serta pengajuan keberatan.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

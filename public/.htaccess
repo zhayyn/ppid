@@ -1,0 +1,12 @@
+Options -Indexes
+
+RewriteEngine On
+
+# Biarkan API PHP dan file nyata diproses Apache apa adanya.
+RewriteCond %{REQUEST_URI} ^/api(?:/|$) [OR]
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Semua route React seperti /admin diarahkan ke entry point SPA.
+RewriteRule ^ index.html [L]
